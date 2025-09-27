@@ -15,6 +15,12 @@ type BaseCollider struct {
 	rect Rect
 }
 
+func NewBaseCollider(rect Rect) *BaseCollider {
+	return &BaseCollider{
+		rect: rect,
+	}
+}
+
 // Bounds returns the bounds of this Collider
 func (b *BaseCollider) Bounds() Rect {
 	return b.rect
